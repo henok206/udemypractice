@@ -245,7 +245,7 @@
 //  console.log(drink);
 
 // code challenge 4
- let billValue=275;
+ let billValue=275;git
  let tip;
  let totalValue= billValue+tip;
  if(billValue>=50&&billValue<=300){
