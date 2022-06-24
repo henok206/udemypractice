@@ -365,15 +365,34 @@
 //       const age=calAge(birthYear);
 //       const retirment=65-age;
 //        if(retirment>0){
-//          return retirment;
+         
 //          console.log(`${firstName} has left ${retirment} years for retirment`);
+//          return retirment;
 //        }else{
-//          return -1;
+         
 //          console.log(`${firstName} already has retired🎉!`);
+//          return -1;
 //        }
       
 //     }
-//     const yearLeftUntilRetirment=calRetirment(1989,"Markos");
+//     const yearLeftUntilRetirment=calRetirment(1956,'Markos');
 //     console.log(yearLeftUntilRetirment);
 
+//fundemental-part2 codechalleng-1
+const calcAverage=(s1,s2,s3)=>(s1+s2+s3)/3;
+const arsenalAVerage=calcAverage(44,23,71);
+console.log(arsenalAVerage);
+const manchisterlAVerage=calcAverage(65,54,49);
+console.log(manchisterlAVerage);
 
+const checkWinner=function(arsenalAVerage,manchisterlAVerage){
+  if(arsenalAVerage>=2*manchisterlAVerage){
+    console.log(`Arsenal win Manchister ${arsenalAVerage} vs ${manchisterlAVerage}`);
+  }else if(manchisterlAVerage>=2*arsenalAVerage){
+    console.log(`Manchister win Arsenal ${manchisterlAVerage } vs ${arsenalAVerage}`);
+  }else{
+    console.log("No Team win");
+  }
+}
+console.log(checkWinner(46,56));
+console.log(checkWinner(60,28));
