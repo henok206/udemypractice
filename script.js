@@ -1,3 +1,4 @@
+'use strict';//strict mode it will help us to identify the bugs
 // Java script Fundamental one
 // about value
 // console.log("hello world");
@@ -244,14 +245,135 @@
 //  const drink= age>=18?'wine🍷':'water🥤' ;
 //  console.log(drink);
 
-// code challenge 4
- let billValue=275;git
- let tip;
- let totalValue= billValue+tip;
- if(billValue>=50&&billValue<=300){
-    tip=billValue*(15/100);
-    console.log(`The BillValue was${billValue},The tip was ${tip} and the total value was ${totalValue}`)
- } else{
-    tip=billValue*(20/100);
-    console.log(`The BillValue was${billValue},The tip was ${tip} and the total value was ${totalValue}`)
- }
+// code for fundemental-1 challeng 4
+// const billValue=430;
+// const tip=(billValue>=50&& billValue<=300)? (billValue*(15/100)): (billValue*(20/100));
+//  console.log(tip);
+//  console.log(`The bill was${billValue},the tip was ${tip},and the total value ${billValue+tip}`);
+
+//fundamentals-part2
+//Functions
+// function logger(){
+//    console.log(`My name is alemu`);
+// }
+// //calling/running/invoking function
+// logger();
+// logger();
+// logger();
+
+// function fruitProcessor(apple,orange){
+//   // console.log(apple,orange);
+//    const juice= `juice with ${apple} apple and ${orange} orange`;
+//    return juice;
+// }
+
+//  //fruitProcessor(5,0);//calling function
+//  const appleJuice=fruitProcessor(5,0);//capturing the value at varible appleJuice 
+//  console.log(appleJuice);
+//  //console.log(fruitProcessor(5,0));// not capture the value in variable simply display 
+//  const appleOrangeJuice=fruitProcessor(3,4);//capturing the value at varible appleJuice 
+//  console.log(appleOrangeJuice);
+
+//  const orangeJuice=fruitProcessor(0,4);//capturing the value at varible appleJuice 
+//  console.log(orangeJuice);
+ 
+//function Declaration Example
+//birthyear is parameter as input
+// //
+//   function calAge1(birthYear){
+//    //const age=2022-birthYear;
+//    //return age;
+//    //or
+//    return 2022-birthYear;
+//  }
+//   const age1=calAge1(1998)//1998 is an argument
+//   console.log(age1);
+
+  //Function Expression
+  //has no fun Name we call it Anonimes
+//   const calAge2=function(birthYear){
+//     return 2022-birthYear;
+   
+//   }
+//   const age2=calAge2(1999);
+//   console.log(age2);
+/*so what the different b/n function declaration and
+ Exprression ? in declaration u can call function before the declaration where as in the Experrsion u will get Error let us see example below*/ 
+ // During Function Declaration it work
+   
+//   const age1=calAge1(1998);
+//   console.log(age1);
+//   function calAge1(birthYear){
+//     return 2022-birthYear;
+//  }
+   
+ //during Function Expression  Cannot access 'calAge2' before initialization
+//  const age2=calAge2(1999);
+//  console.log(age2);
+//  const calAge2=function(birthYear){
+//    return 2022-birthYear;
+//   }
+
+//Arrow function
+// no need curly brace and if we have one line code not wright explicitly return key word
+//Arrow function with single line code
+// const calAge3=birthYear=>2022-birthYear;
+// const age3=calAge3(2000);
+// console.log(age3);
+// Arrow function multiple line code
+//  const calRetirment=birthYear=>{
+//    const age=2022-birthYear;
+//    const retirment=65-age;
+//    return retirment;
+//  }
+//  const yearLeftUntilRetirment=calRetirment(2000);
+//   console.log(yearLeftUntilRetirment);
+// having multiple parameter we need to wrap with bracket
+// const calRetirment=(birthYear,firstName)=>{
+//    const age=2022-birthYear;
+//    const retirment=65-age;
+//    return `${firstName} has left ${retirment}  years for retirment`;
+//  }
+//  const yearLeftUntilRetirment=calRetirment(1986,"Abebe");
+//  console.log(yearLeftUntilRetirment);
+//let us use with out capturing just display in consol
+//  console.log(calRetirment(1985,"Bedilu"));
+//  console.log(calRetirment(1976,"Kebede"));
+//  console.log(calRetirment(1996,"Almaz"));
+//  console.log(calRetirment(2000,"Aster"));
+
+//Function calling aother Function Example1
+//  const cutPieces=function(fruit){
+//    return fruit*4;
+//  }
+
+// function fruitProcessor(apple,orange){
+//     const applePieces=cutPieces(apple);
+//     const orangePieces=cutPieces(orange);
+//    const juice= `juice with ${applePieces} pieces of apple and ${orangePieces} pieces  orange`;
+//    return juice;
+// }
+// const appleOrangeJuice=fruitProcessor(2,3);
+// console.log(appleOrangeJuice);
+
+//Function calling aother Function Example2
+// const calAge=function(birthYear){
+//    return 2022-birthYear;
+// }
+
+// const calRetirment=function(birthYear,firstName){
+//       const age=calAge(birthYear);
+//       const retirment=65-age;
+//        if(retirment>0){
+//          return retirment;
+//          console.log(`${firstName} has left ${retirment} years for retirment`);
+//        }else{
+//          return -1;
+//          console.log(`${firstName} already has retired🎉!`);
+//        }
+      
+//     }
+//     const yearLeftUntilRetirment=calRetirment(1989,"Markos");
+//     console.log(yearLeftUntilRetirment);
+
+
