@@ -379,20 +379,204 @@
 //     console.log(yearLeftUntilRetirment);
 
 //fundemental-part2 codechalleng-1
-const calcAverage=(s1,s2,s3)=>(s1+s2+s3)/3;
-const arsenalAVerage=calcAverage(44,23,71);
-console.log(arsenalAVerage);
-const manchisterlAVerage=calcAverage(65,54,49);
-console.log(manchisterlAVerage);
+//Test 1
+// const calcAverage=(s1,s2,s3)=>(s1+s2+s3)/3;
+// let arsenalAVerage=calcAverage(44,23,71);
+// console.log(arsenalAVerage);
+// let  manchisterlAVerage=calcAverage(65,54,49);
+// console.log(manchisterlAVerage);
 
-const checkWinner=function(arsenalAVerage,manchisterlAVerage){
-  if(arsenalAVerage>=2*manchisterlAVerage){
-    console.log(`Arsenal win Manchister ${arsenalAVerage} vs ${manchisterlAVerage}`);
-  }else if(manchisterlAVerage>=2*arsenalAVerage){
-    console.log(`Manchister win Arsenal ${manchisterlAVerage } vs ${arsenalAVerage}`);
-  }else{
-    console.log("No Team win");
-  }
-}
-console.log(checkWinner(46,56));
-console.log(checkWinner(60,28));
+// const checkWinner=function(arsenalAVerage,manchisterlAVerage){
+//   if(arsenalAVerage>=2*manchisterlAVerage){
+//     console.log(`Arsenal win Manchister ${arsenalAVerage} vs ${manchisterlAVerage}`);
+//   }else if(manchisterlAVerage>=2*arsenalAVerage){
+//     console.log(`Manchister win Arsenal ${manchisterlAVerage } vs ${arsenalAVerage}`);
+//   }else{
+//     console.log("No Team win");
+//   }
+// }
+// console.log(checkWinner(arsenalAVerage,manchisterlAVerage));
+// //test 2
+// arsenalAVerage=calcAverage(85,54,41);
+// manchisterlAVerage=calcAverage(23,34,27);
+// console.log(checkWinner(arsenalAVerage,manchisterlAVerage));
+                     // Array
+/*Numbers, boolean values, and the null and undefined types are primitive. Objects, arrays, and functions are reference types. A primitive type has a fixed size in memory. For example, a number occupies eight bytes of memory, and a boolean value can be represented with only one bit. */
+// const friends=['abebe','kebede','Moges','Aster','Almaz'];
+// const firstName="Epherem";
+// const Myfriends=[friends,firstName,"john","Mick"];
+// console.log(Myfriends.length);//4
+// console.log(Myfriends);
+// console.log(Myfriends[2]);//john
+// console.log(Myfriends[1]);//Epherem
+// console.log(Myfriends[0]);// ['abebe','kebede','Moges','Aster','Almaz'];
+// console.log(Myfriends[Myfriends.length-1]);//Mick
+//   //changing one arrray value
+//   Myfriends[3]="Vasanta";// is it possible to change value of arr that declear by const? yes
+//   console.log(Myfriends[Myfriends.length-1]);
+  // array Exercise
+  // const ageCal=function(birthYear){
+  //   return 2022-birthYear;
+  // }
+  // const years=[1996,1998,1999,2000,2002];
+  //  const age1=ageCal(years[0]);
+  //  const age2=ageCal(years[1]);
+  //  const age3=ageCal(years[2]);
+  //  const age4=ageCal(years[3]);
+  //  console.log(age1,age2,age3,age4);
+  //  const ages=[ageCal(years[0]),ageCal(years[1]),ageCal(years[2]),ageCal(years[3])];
+  // const agesAll=[age1,age2,age3,age4];
+  //  console.log(ages);
+  //  console.log(agesAll);
+
+  //Array methods example
+      //add element at the End by using push method
+  // const friends=['abebe','kebede','Moges'];
+  //  friends.push('Aster','Almaz');
+  //  console.log(friends);//['abebe','kebede','Moges','Aster','Almaz'];add at the End
+  //  // add element at the biggnig  by using unshift method
+  //  friends.unshift("Mesay");
+  //  console.log(friends);//['Mesay',abebe','kebede','Moges','Aster','Almaz']
+
+     //remove elements using pop method it is opposit to push
+    //   friends.pop();//remove last element
+    //   console.log(friends);//['Mesay',abebe','kebede','Moges','Aster',]
+    //   //remove Element fro the bignning by using shift method
+    //   friends.shift();
+    //   console.log(friends);//['abebe','kebede','Moges','Aster',]
+
+    //   //To know the element at what index it is? by using indexOf method
+    //   console.log(friends.lastIndexOf('Moges'));
+    //  //Es6 method include
+    //  console.log(friends.includes('Moges'));//true
+    //  console.log(friends.includes('Elias'));//false
+    //  //we can use include method for conditional
+    //  if(friends.includes('Aster')){
+    //   console.log("you have afriend called Aster");
+    //  }else{
+    //   console.log("you don't have afriend called Aster ");
+    //  }
+
+    //Fundemental part-2 code challeng-2
+       //Test1
+      //const bill=100;
+    // const tipCal=function(bill)
+    // {
+    //   return (bill>=50&&bill<=300)? bill*0.15:bill*0.20;
+    // }
+    // console.log(tipCal);
+    //tess-2 using array
+   // const bills=[125,555,44];
+    // const tip1=tipCal(bills[0]);
+    // const tip2=tipCal(bills[1]);
+    // const tip3=tipCal(bills[2]);
+    // console.log(tip1,tip2,tip3);
+    // const tips=[tipCal(bills[0]),tipCal(bills[1]),tipCal(bills[2])];
+    // //console.log(tips);
+    // console.log(bills,tips);
+    // // test 3 creat array total value
+    // const totals=[bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]];
+    // console.log(totals);
+
+
+    //object can accecess the property by dot or squire bracket
+    // const kebede={
+    //   firstName:"kebede",
+    //   lastName:"Alemu",
+    //   age:2022-1998,
+    //   job:'Instructor',
+    //   frends: ['abebe','Dessie','Lema']
+
+    // }
+    // //  console.log(kebede.firstName);//kebede
+    //  console.log(kebede.frends);//['abebe','Dessie','Lema']
+    //  console.log(kebede.lastName);//Alemu
+       //now let us acess throgh[''] dont forget to use qotetion
+      //  console.log(kebede['firstName']);//kebede
+      //  console.log(kebede['lastName']);//Alem
+      //  console.log(kebede['age']);//24
+    //what the different between dot notation and  bracket watch vidio 43 udemy js
+    
+    //example
+    // const interestedIn= prompt("what would like to know about Kebede? choose between firstName,lastName,age,frends,job ");
+     //console.log(kebede.interestedIn);//undifined
+         //but
+        // if(kebede[interestedIn])
+        // {
+        //   console.log(kebede[interestedIn]);//if exist the property(key value)
+        // }else{
+        //    console.log('Wrong request!choose between firstName,lastName,age,frends,job ');
+        // }
+      //To add new property by using dot and bracket Notation
+
+      // kebede.location="Ethiopia";
+      // kebede['twitter']="@kebede";
+      // console.log(kebede);
+        
+      // const yohannes={
+      //   firstName:'yohannes',
+      //   frindes:['Michel','kasa','Belete']
+      // }
+      // console.log(`${yohannes.firstName} has${yohannes.frindes.length} frindes,${yohannes.frindes[0]} is best friend`);
+      
+      // using object methods//vidio 44
+      // const kebede={
+      //    firstName:"kebede",
+      //     lastName:"Alemu",
+      //      birthYear:1998,
+      //      job:'Instructor',
+      //      frends: ['abebe','Dessie','Lema'],
+      //      hasDriverLicense:true,
+          //  calAge:function(birthYear){
+          //     return 2022-birthYear;
+          //  }
+        //   calAge:function(){
+        //     return 2022-this.birthYear;
+        //  }
+      //   calAge:function(){
+      //     this.age=2022-this.birthYear;
+      //     return this.age;
+      //  },
+      //   getSummery:function(){
+      //     return `${this.firstName} is a ${this.calAge()}-year old,and he has ${this.hasDriverLicense?'a':'no'} driver license,He has ${this.frends.length} friends their name are as follow  ${this.frends}`
+      //   }
+      //   }
+        //console.log(kebede.calAge());
+        //  console.log(kebede.age);
+        //  console.log(kebede.age);
+         
+        //console.log(kebede.calAge(1998));//dot notation
+        //console.log(kebede['calAge'](1998));// bracket notation
+        // challenge Answer
+        // console.log(kebede.getSummery());
+
+        //fundemental part-2 code challenge 3
+        const mark={
+          fullName:'Mark MIller',
+          mass:78,
+          height:1.69,
+          calcBMI:function(){
+            this.bmi=this.mass/this.height**2;
+            return this.bmi;
+          }
+        }
+          
+        const john={
+           fullName:'John MIller',
+           mass:92,
+           height:1.95,
+           calcBMI:function(){
+            this.bmi=this.mass/this.height**2;
+            return this.bmi;
+          }
+        }
+        mark.calcBMI();
+        john.calcBMI();
+        console.log(mark.bmi,john.bmi);
+        if(mark.bmi>john.bmi){
+          console.log(`${mark.fullName}'s BMI ${mark.bmi} is higher than ${john.fullName}'s BMI ${john.bmi} `)
+        } else if(john.bmi>mark.bmi){
+          console.log(`${john.fullName}'s BMI ${john.bmi} is higher than ${mark.fullName}'s BMI ${mark.bmi} `)
+        }
+
+        // console.log(`${Mark.firstName + ' ' + Mark.lastName} has  ${Mark.calcBMI()}bmi higher than $ ${John.firstName + ' ' + John.lastName}  bmi ${John.calcBMI()}`);
