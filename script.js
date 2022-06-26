@@ -551,32 +551,159 @@
         // console.log(kebede.getSummery());
 
         //fundemental part-2 code challenge 3
-        const mark={
-          fullName:'Mark MIller',
-          mass:78,
-          height:1.69,
-          calcBMI:function(){
-            this.bmi=this.mass/this.height**2;
-            return this.bmi;
-          }
-        }
+        // const mark={
+        //   fullName:'Mark MIller',
+        //   mass:78,
+        //   height:1.69,
+        //   calcBMI:function(){
+        //     this.bmi=this.mass/this.height**2;
+        //     return this.bmi;
+        //   }
+        // }
           
-        const john={
-           fullName:'John MIller',
-           mass:92,
-           height:1.95,
-           calcBMI:function(){
-            this.bmi=this.mass/this.height**2;
-            return this.bmi;
-          }
-        }
-        mark.calcBMI();
-        john.calcBMI();
-        console.log(mark.bmi,john.bmi);
-        if(mark.bmi>john.bmi){
-          console.log(`${mark.fullName}'s BMI ${mark.bmi} is higher than ${john.fullName}'s BMI ${john.bmi} `)
-        } else if(john.bmi>mark.bmi){
-          console.log(`${john.fullName}'s BMI ${john.bmi} is higher than ${mark.fullName}'s BMI ${mark.bmi} `)
-        }
+        // const john={
+        //    fullName:'John MIller',
+        //    mass:92,
+        //    height:1.95,
+        //    calcBMI:function(){
+        //     this.bmi=this.mass/this.height**2;
+        //     return this.bmi;
+        //   }
+        // }
+        // mark.calcBMI();
+        // john.calcBMI();
+        // console.log(mark.bmi,john.bmi);
+        // if(mark.bmi>john.bmi){
+        //   console.log(`${mark.fullName}'s BMI ${mark.bmi} is higher than ${john.fullName}'s BMI ${john.bmi} `)
+        // } else if(john.bmi>mark.bmi){
+        //   console.log(`${john.fullName}'s BMI ${john.bmi} is higher than ${mark.fullName}'s BMI ${mark.bmi} `)
+        // }
 
         // console.log(`${Mark.firstName + ' ' + Mark.lastName} has  ${Mark.calcBMI()}bmi higher than $ ${John.firstName + ' ' + John.lastName}  bmi ${John.calcBMI()}`);
+
+          // itereation  using for loop
+          // const abeArray=[
+          //   'Abebe',
+          //    'Alemu',
+          //    2022-1999,
+          //    'Teacher',
+          //    ['Belay','Markos','Asegid'],
+          // ];
+          // const types=[];
+          // for(let i=0; i<abeArray.length; i++){
+              
+          //    //Reading from AbeArray
+          //   console.log(abeArray[i],typeof abeArray[i]);
+          //   //filling types array
+          //   //types[i] =typeof abeArray[i];
+          //     //or
+          //    // types.push(typeof abeArray[i]);
+          // }
+          // console.log(types);
+          //Exampl 2 array
+
+        //  const birthYear=[1989,1988,1990,1999,2001];
+        //  const ages=[];
+        //  for(let i=0; i<birthYear.length; i++){
+        //    ages.push(2022-birthYear[i]);
+        //  }
+        //  console.log(ages);
+
+        //continue and break stetment
+        // const abeArray=[
+        //   'Abebe',
+        //    'Alemu',
+        //    2022-1999,
+        //    'Teacher',
+        //    ['Belay','Markos','Asegid'],
+        // ];
+        // console.log(`=====only string===`);
+        // for(let i=0; i<abeArray.length; i++){
+           
+        //      if(typeof abeArray[i]!=='string') continue;
+        //    //Reading from AbeArray
+        //   console.log(abeArray[i],typeof abeArray[i]);
+          
+        // }
+         //about break
+      //   console.log(`=====break with Number===`);
+      //   for(let i=0; i<abeArray.length; i++){
+           
+      //     if(typeof abeArray[i]=="number") break;
+      //   //Reading from AbeArray
+      //  console.log(abeArray[i],typeof abeArray[i]);
+      //  }
+       // back ward iteration
+       //4 ,3, 2, 1, 0
+      // const abeArray=[
+      //   'Abebe',
+      //    'Alemu',
+      //    2022-1999,
+      //    'Teacher',
+      //    ['Belay','Markos','Asegid'],
+      //    true
+      // ];
+
+      // for(let i=abeArray.length-1; i>=0; i--){
+      //   //Reading from AbeArray
+      //  console.log(i,abeArray[i],typeof abeArray[i]);
+      // }
+      
+      //nested for loop example
+
+      // for(let exercise=1; exercise<4; exercise++){
+      //   console.log(`===Starting exercise ${exercise}`);
+      //   for(let rep=1; rep<6; rep++){
+      //     console.log(` Exercise ${exercise}:lifting weight repetion ${rep}🏋️`);
+      //   }
+      // }
+          //while loop
+
+      // let rep=1;
+      // while(rep<6){
+      //   console.log(`Lifting weight reption ${rep}`);
+      //   rep++
+      // }
+      // let dice=Math.trunc(Math.random()*6)+1;
+      // console.log(dice);
+      // while(dice!==6){
+      //     console.log(`you rolled a ${dice}`);
+      //     dice=Math.trunc(Math.random()*6)+1;
+      //     if(dice===6) console.log(`The loop is about to End`);
+      //   }
+
+      // fundemental part-2 last code challeng
+    //   const tipCal=function(bill)
+    //   {
+    //     return (bill>=50&&bill<=300)? bill*0.15:bill*0.20;
+    //   }
+      
+    // const bills=[22,295,176,440,37,105,10,1100,86,523];
+    //  const tips=[];
+    //  const totals=[];
+    // for(let i=0;i<bills.length; i++){
+     
+    //        const tip=tipCal(bills[i]);
+    //     tips.push(tip);
+    //     totals.push(bills[i]+tip);
+        
+    //  }
+     // console.log(bills,tips,totals);
+     
+
+
+      //Bones challeng
+      
+    //    const calAve=function(arr){
+    //       let sum=0;
+    //     for(let i=0; i<arr.length;i++){
+    //         sum=sum+arr[i];
+    //      }
+    //     // console.log(sum);
+    //        return sum/arr.length;
+          
+    //   }
+      
+    //  console.log(calAve([3,7,2]));
+    //  console.log(calAve(tips));
+    //  console.log(calAve(totals))
