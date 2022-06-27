@@ -568,7 +568,7 @@
         //    calcBMI:function(){
         //     this.bmi=this.mass/this.height**2;
         //     return this.bmi;
-        //   }
+        //   } 
         // }
         // mark.calcBMI();
         // john.calcBMI();
@@ -707,3 +707,26 @@
     //  console.log(calAve([3,7,2]));
     //  console.log(calAve(tips));
     //  console.log(calAve(totals))
+   //
+    // calculate temp amplitude
+    //what amplitude: Answer max-min
+    //
+     const temperatures=[3,-2,-6,-1,'error',9,13,17,15,14,9,5];
+    const calTemAmp=function(temps){
+      let max=temps[0];
+      let min=temps[0];
+
+       for(let i=0; i<temps.length; i++){
+          const curnTem =temps[i];
+          if( typeof curnTem !=='number') continue;
+          if(curnTem>max) max=curnTem;
+          if(curnTem<min) min=curnTem;
+
+       }
+       console.log(max,min);
+       return max-min
+    }
+    //calTemAmp([3,7,9,78]);
+     const amplitude=calTemAmp(temperatures);
+    console.log(amplitude);
+    
